@@ -1,4 +1,4 @@
-## AI in Neurological Disease Treatment
+# AI in Neurological Disease Treatment
 Introduction
 This project demonstrates the potential of artificial intelligence (AI) in the treatment of neurological diseases. It includes visualizations highlighting the prevalence of various neurological conditions, the impact of AI on treatment, and the benefits of AI for investors. Additionally, examples of social, human, and optimistic benefits of using AI in this field are provided.
 
@@ -6,23 +6,20 @@ Visualizations
 1. Prevalence of Neurological Diseases
 This chart shows the percentage of the global population affected by various neurological diseases. The visualization emphasizes the need for investment in research and development of treatments.
 
-
-python
-Copiar código
 import matplotlib.pyplot as plt
 
-# Data for the prevalence of neurological diseases
+## Data for the prevalence of neurological diseases
 diseases = ["Dementia/Alzheimer's", "Stroke", "Multiple Sclerosis", "Epilepsy", "Parkinson's Disease", "ALS"]
 prevalences = [50e6, 80e6, 2.8e6, 50e6, 10e6, 450e3]
 percentages = [(p / 8e9) * 100 for p in prevalences]
 
-# Plotting the prevalence chart
+## Plotting the prevalence chart
 fig, ax = plt.subplots(figsize=(10, 6))
 ax.barh(diseases, percentages, color='skyblue')
 ax.set_xlabel('Percentage of Global Population (%)')
 ax.set_title('Percentage of People with Neurological Diseases')
 
-# Adding values on the bars
+## Adding values on the bars
 for index, value in enumerate(percentages):
     ax.text(value, index, f'{value:.4f}%')
 
@@ -31,21 +28,18 @@ plt.show()
 2. Impact of AI on Neurological Disease Treatment
 This chart illustrates the areas where AI can significantly improve the treatment of neurological diseases, highlighting the percentage improvement in efficiency and cost.
 
-
-python
-Copiar código
-# Data for the impact of AI
+## Data for the impact of AI
 areas = ["Early Diagnosis", "Treatment Personalization", "Remote Monitoring", "R&D Acceleration"]
 improvements = [85, 75, 80, 90]  # Percentage improvement in efficiency/cost
 
-# Plotting the AI impact chart
+## Plotting the AI impact chart
 fig, ax = plt.subplots(figsize=(10, 6))
 bars = ax.bar(areas, improvements, color='lightgreen')
 
 ax.set_ylabel('Improvement (%)')
 ax.set_title('Impact of AI on Neurological Disease Treatment')
 
-# Adding labels on the bars
+## Adding labels on the bars
 for bar in bars:
     yval = bar.get_height()
     ax.text(bar.get_x() + bar.get_width()/2 - 0.15, yval + 2, f'{yval}%', fontsize=12)
@@ -55,12 +49,9 @@ plt.show()
 3. Benefits of AI for Investors
 This visualization shows how AI can improve diagnostic accuracy, treatment efficacy, reduce costs, and accelerate research, highlighting the benefits for investors.
 
-
-python
-Copiar código
 import numpy as np
 
-# Data for AI benefits for investors
+## Data for AI benefits for investors
 categories = ["Diagnostic Accuracy", "Treatment Efficacy", "Cost Reduction", "Research Speed"]
 values = [90, 85, 70, 80]  # Percentage improvement in each area
 
