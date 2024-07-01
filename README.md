@@ -1,4 +1,4 @@
-AI in Neurological Disease Treatment
+## AI in Neurological Disease Treatment
 Introduction
 This project demonstrates the potential of artificial intelligence (AI) in the treatment of neurological diseases. It includes visualizations highlighting the prevalence of various neurological conditions, the impact of AI on treatment, and the benefits of AI for investors. Additionally, examples of social, human, and optimistic benefits of using AI in this field are provided.
 
